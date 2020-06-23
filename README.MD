@@ -13,8 +13,8 @@
 
 <br>
 
-<p align="center>
-  ![Border Radius Generator](./border-radius.gif)
+<p align="center">
+  <img src="./border-radius.gif" alt="Border Radius Generator" width="100%">
 </p>
 
 ## 🚀 Technologies
