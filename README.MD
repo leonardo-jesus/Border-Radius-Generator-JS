@@ -14,7 +14,7 @@
 <br>
 
 <p align="center">
-  <img src="./border-radius.gif" alt="Border Radius Generator" width="100%">
+  <img src="./border-radius.gif" alt="Border Radius Generator">
 </p>
 
 ## 🚀 Technologies
