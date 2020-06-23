@@ -13,7 +13,9 @@
 
 <br>
 
-![Border Radius Generator](./border-radius.gif)
+<p align="center>
+  ![Border Radius Generator](./border-radius.gif)
+</p>
 
 ## 🚀 Technologies
 
