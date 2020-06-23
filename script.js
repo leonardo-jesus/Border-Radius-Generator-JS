@@ -46,28 +46,28 @@ let bordersCSSText = {
   }
 };
 
-// function sendObjectValues(topL, topR, botL, botR) {
-//   return bordersCSSText = { 
-//       webkit: {
-//         "-webkit-border-top-left-radius": `${topL}%`, 
-//         "-webkit-border-top-right-radius": `${topR}%`,
-//         "-webkit-border-bottom-right-radius": `${botL}%`,
-//         "-webkit-border-bottom-left-radius": `${botR}%`
-//       },
-//       moz: { 
-//         "-moz-border-top-left-radius": `${topL}%`,
-//         "-moz-border-top-right-radius": `${topR}%`,
-//         "-moz-border-bottom-right-radius": `${botL}%`,
-//         "-moz-border-bottom-left-radius": `${botR}%`
-//       },
-//       borderR: {  
-//         "border-top-left-radius": `${topL}%`,
-//         "border-top-right-radius": `${topR}%`,
-//         "border-bottom-right-radius": `${botL}%`,
-//         "border-bottom-left-radius": `${botR}%`
-//       }
-//   };
-// }
+function sendObjectValues(topL, topR, botL, botR) {
+  return bordersCSSText = {
+    webkit: {
+      "-webkit-border-top-left-radius": `${topL}%`,
+      "-webkit-border-top-right-radius": `${topR}%`,
+      "-webkit-border-bottom-right-radius": `${botL}%`,
+      "-webkit-border-bottom-left-radius": `${botR}%`
+    },
+    moz: {
+      "-moz-border-top-left-radius": `${topL}%`,
+      "-moz-border-top-right-radius": `${topR}%`,
+      "-moz-border-bottom-right-radius": `${botL}%`,
+      "-moz-border-bottom-left-radius": `${botR}%`
+    },
+    borderR: {
+      "border-top-left-radius": `${topL}%`,
+      "border-top-right-radius": `${topR}%`,
+      "border-bottom-right-radius": `${botL}%`,
+      "border-bottom-left-radius": `${botR}%`
+    }
+  };
+}
 
 
 // EVENT HANDLER FUNCTIONS
@@ -162,15 +162,15 @@ inputTopRight.addEventListener('blur', event => {
   console.log(bordersCSSText);
 });
 
-// inputBottomLeft.addEventListener('blur', event => {
-//   sendObjectValues(botL=`${event.target.value}`);
-//   console.log(bordersCSSText);
-// });
+inputBottomLeft.addEventListener('blur', event => {
+  sendObjectValues(botL = `${event.target.value}`);
+  console.log(bordersCSSText);
+});
 
-// inputBottomRight.addEventListener('blur', event => {
-//    (botR=`${event.target.value}`);
-//   console.log(bordersCSSText);
-// });
+inputBottomRight.addEventListener('blur', event => {
+  (botR = `${event.target.value}`);
+  console.log(bordersCSSText);
+});
 
 // COPY CODE BUTTON
 function copyCode() {
